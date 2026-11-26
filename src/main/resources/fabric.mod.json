@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ask-me",
+  "version": "${version}",
+  "name": "Ask Me",
+  "description": "Client-side AI companion powered by Google Gemini. Chat with the AI in a Minecraft-style chat window (K), open Settings from the top bar, and let the AI answer when someone tags your username in chat.",
+  "authors": [
+    "AYYAN"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/project/askme",
+    "sources": "https://github.com/AYVNXV/AskMe"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/ask-me/icon.png",
+  "environment": "client",
+
+  "entrypoints": {
+    "main": [
+      "com.ayyan.askme.AskMe"
+    ],
+    "client": [
+      "com.ayyan.askme.AskMeClient"
+    ],
+    "modmenu": [
+      "com.ayyan.askme.integration.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
